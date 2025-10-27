@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Studio &mdash; Personal site preview</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+  <script type="module" src="/assets/site.js"></script>
+</head>
+<body>
+  <div class="layout layout--site">
+    <header class="site-hero" id="site-hero">
+      <div class="site-hero__profile">
+        <div class="site-hero__avatar" id="profile-avatar"></div>
+        <div>
+          <p class="eyebrow" id="profile-intent"></p>
+          <h1 id="profile-headline">Loading profile...</h1>
+          <p class="lead" id="profile-bio"></p>
+          <div class="chip-row" id="focus-areas" aria-label="Focus areas"></div>
+        </div>
+      </div>
+      <aside class="site-hero__meta">
+        <dl class="stat-list">
+          <div>
+            <dt>Location</dt>
+            <dd id="profile-location">&mdash;</dd>
+          </div>
+          <div>
+            <dt>Availability</dt>
+            <dd id="profile-availability">&mdash;</dd>
+          </div>
+        </dl>
+        <div class="link-grid" id="profile-links"></div>
+        <div>
+          <h3 class="site-hero__subheading">Core skills</h3>
+          <div class="pill-grid" id="skills-list"></div>
+        </div>
+      </aside>
+    </header>
+
+    <nav class="site-nav" aria-label="Sections">
+      <ul id="site-nav-links"></ul>
+    </nav>
+
+    <main class="site-main">
+      <section class="site-section" id="featured-section">
+        <header class="site-section__header">
+          <h2 id="featured-title">Featured work</h2>
+          <p id="featured-subtitle">Highlights from the current homepage layout.</p>
+        </header>
+        <div class="featured-grid" id="featured-grid"></div>
+        <div class="insight-pills" id="homepage-highlights"></div>
+      </section>
+
+      <section class="site-section" id="cv-section">
+        <header class="site-section__header">
+          <h2>Career highlights</h2>
+          <p>Signals extracted from your uploaded CV.</p>
+        </header>
+        <ul class="timeline" id="cv-highlights"></ul>
+      </section>
+
+      <section id="category-sections"></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Aura Studio Prototype.</p>
+    </footer>
+  </div>
+</body>
+</html>
