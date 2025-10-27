@@ -55,6 +55,7 @@ README.md            // documentation
 - The prototype is self-contained and deployable on any static hosting solution. When hosting without Node, serve the contents of the `public` folder directly.
 - For environments that require a runtime (e.g., Render, Fly.io, Railway), run `node server.js`. No build step is required.
 - Because the app avoids external packages, `npm install` succeeds by design and the preview can be hosted without registry access.
+- A ready-to-use Render configuration (`render.yaml`) and GitHub Actions workflow (`.github/workflows/deploy.yml`) are included. After creating a free Render Web Service with this repository, add the `RENDER_SERVICE_ID` and `RENDER_API_KEY` secrets in GitHub to enable one-click deployments from the workflow. Render is preferred over Vercel for this prototype because the JSON data store requires a writable filesystem.
 
 ## Roadmap considerations
 

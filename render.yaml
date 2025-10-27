@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aura-studio-preview
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    autoDeploy: false
