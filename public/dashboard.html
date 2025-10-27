@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Studio Admin Demo</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+  <script type="module" src="/assets/dashboard.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <header class="topbar">
+      <a class="brand" href="/index.html">
+        <span class="brand__mark">Aura</span>
+        <span class="brand__text">Studio</span>
+      </a>
+      <div class="cta-group">
+        <a class="button button--ghost" href="/index.html">Back to home</a>
+      </div>
+    </header>
+
+    <main class="dashboard-layout">
+      <section class="dashboard-header">
+        <p class="eyebrow">Admin workspace</p>
+        <h1>Curate categories, spotlight content, stay close to your leads.</h1>
+        <p class="lead">This interactive prototype showcases how Aura Studio keeps your portfolio presence organised. Switch between tabs to explore the content manager, homepage layout, and inbox.</p>
+      </section>
+
+      <section class="panel-card">
+        <nav class="nav-tabs" role="tablist">
+          <button class="nav-tabs__button nav-tabs__button--active" data-tab="profile" role="tab" aria-selected="true">Profile</button>
+          <button class="nav-tabs__button" data-tab="categories" role="tab" aria-selected="false">Categories</button>
+          <button class="nav-tabs__button" data-tab="entries" role="tab" aria-selected="false">Entries</button>
+          <button class="nav-tabs__button" data-tab="homepage" role="tab" aria-selected="false">Homepage</button>
+          <button class="nav-tabs__button" data-tab="messages" role="tab" aria-selected="false">Messages</button>
+        </nav>
+
+        <div id="tab-content" class="panel-card--inline" role="tabpanel"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Aura Studio.</p>
+    </footer>
+  </div>
+</body>
+</html>

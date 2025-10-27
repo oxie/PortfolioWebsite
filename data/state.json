@@ -1,0 +1,156 @@
+{
+  "profile": {
+    "headline": "Systems engineer exploring frontier tech & cosmic curiosities",
+    "intent": "Building presence",
+    "focusAreas": ["Deep tech", "Crypto ventures", "Research"],
+    "bio": "I architect adaptive systems, explore extraterrestrial tech, and translate breakthrough research into tangible ventures.",
+    "links": [
+      "https://www.linkedin.com/in/aura",
+      "https://github.com/aura",
+      "https://mirror.xyz/aura",
+      "mailto:hello@aurastudio.dev"
+    ],
+    "cvHighlights": [
+      "Led mission control autonomy programme for lunar robotics fleet",
+      "Launched AuroraChain, a tokenised research collective for frontier science",
+      "Published 24+ essays on crypto-enabled exploration economies"
+    ],
+    "location": "Lisbon & Remote",
+    "availability": "Open for advisory & research collaborations",
+    "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&w=400&h=400&q=80",
+    "skills": [
+      "Systems architecture",
+      "Decentralised research ops",
+      "Robotics",
+      "Token design"
+    ]
+  },
+  "categories": [
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "featured": true,
+      "description": "Flagship builds and immersive experiences deployed across space tech and crypto ecosystems."
+    },
+    {
+      "id": "articles",
+      "name": "Articles",
+      "featured": true,
+      "description": "Long-form essays translating frontier research into practical playbooks."
+    },
+    {
+      "id": "ventures",
+      "name": "Ventures",
+      "featured": true,
+      "description": "Collectives, experiments, and tokenised communities incubated with collaborators."
+    },
+    {
+      "id": "signals",
+      "name": "Signals",
+      "featured": false,
+      "description": "Fast takes and curiosity drops sourced from deep exploration."
+    },
+    {
+      "id": "library",
+      "name": "Research Library",
+      "featured": false,
+      "description": "Reading notes, frameworks, and reference material I return to often."
+    }
+  ],
+  "entries": [
+    {
+      "id": "aurorachain",
+      "title": "AuroraChain — Tokenised research collective",
+      "categoryId": "ventures",
+      "status": "published",
+      "featured": true,
+      "updatedAt": "2025-10-16",
+      "summary": "Scaled a decentralised treasury that funds early-stage space and energy research, backed by programmable incentives.",
+      "body": "Designed and launched AuroraChain, a community-owned network pooling capital and expertise for frontier science. Built token mechanics, contributor reputation graphs, and a research review pipeline that ships grants in weeks instead of quarters.",
+      "link": "https://aurorachain.xyz",
+      "media": "https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80",
+      "tags": ["DAO", "Science", "Treasury"]
+    },
+    {
+      "id": "lunar-habitats",
+      "title": "Lunar Habitat Systems: autonomous construction playbook",
+      "categoryId": "articles",
+      "status": "scheduled",
+      "featured": false,
+      "updatedAt": "2025-10-21",
+      "summary": "Field notes on orchestrating autonomous crews to assemble resilient habitats on the lunar south pole.",
+      "body": "Synthesises research from my residency at the Orbital Systems Lab. Covers robotics swarms, regolith sintering, and crypto-economic incentives to coordinate international partners.",
+      "link": "https://journal.aurastudio.dev/lunar-habitats",
+      "media": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+      "tags": ["Space", "Automation", "Playbook"]
+    },
+    {
+      "id": "copilot",
+      "title": "Mission control copilot for deep-space robotics",
+      "categoryId": "portfolio",
+      "status": "published",
+      "featured": true,
+      "updatedAt": "2025-10-13",
+      "summary": "Built a decision support copilot blending telemetry, simulations, and human expertise for near-real-time mission ops.",
+      "body": "Led the design of a mission control surface trusted by distributed teams. Integrated predictive models, anomaly detection, and collaborative triage to keep robotics fleets safe beyond Earth.",
+      "link": "https://portfolio.aurastudio.dev/mission-control",
+      "media": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+      "tags": ["AI", "Control systems", "UX"]
+    },
+    {
+      "id": "alien-notes",
+      "title": "Notes from the SETI observatory residency",
+      "categoryId": "signals",
+      "status": "draft",
+      "featured": false,
+      "updatedAt": "2025-10-09",
+      "summary": "Informal transmissions documenting speculative tech discovered alongside SETI researchers.",
+      "body": "A playful digest of observations, from strange spectral signatures to collaborative protocols designed with interstellar contact in mind.",
+      "link": "https://notes.aurastudio.dev/seti-observatory",
+      "media": "https://images.unsplash.com/photo-1517971071642-34a2d3ecc9cd?auto=format&fit=crop&w=1200&q=80",
+      "tags": ["SETI", "Speculative", "Notes"]
+    }
+  ],
+  "homepage": {
+    "hero": {
+      "title": "Systems engineer exploring frontier tech & cosmic curiosities",
+      "cta": "Connect for collaborations"
+    },
+    "featured": [
+      { "slot": "Spotlight column", "entryId": "copilot" },
+      { "slot": "Wide feature", "entryId": "aurorachain" },
+      { "slot": "Story card", "entryId": "lunar-habitats" }
+    ],
+    "highlights": [
+      "Showcase crypto ventures in a dedicated Signals stream",
+      "Surface upcoming speaking engagements in the marquee banner",
+      "Display contact CTA near the hero for new advisory opportunities"
+    ]
+  },
+  "messages": [
+    {
+      "id": "m-01",
+      "sender": "Nova Aerospace",
+      "email": "alliances@nova.space",
+      "status": "new",
+      "receivedAt": "2025-10-18T10:15:00.000Z",
+      "body": "We loved your panel on lunar resource autonomy. Are you open to advising our mining pilot?"
+    },
+    {
+      "id": "m-02",
+      "sender": "SignalCast Podcast",
+      "email": "producers@signalcast.fm",
+      "status": "replied",
+      "receivedAt": "2025-10-12T17:45:00.000Z",
+      "body": "Inviting you to discuss crypto-backed science funding. Recording slots next week."
+    },
+    {
+      "id": "m-03",
+      "sender": "Helix Labs",
+      "email": "talent@helixlabs.ai",
+      "status": "archived",
+      "receivedAt": "2025-10-04T09:30:00.000Z",
+      "body": "We are hiring a Head of Experimental Platforms. Your background seems like an ideal match."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Studio Onboarding</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/onboarding.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <header class="topbar">
+      <a class="brand" href="/index.html">
+        <span class="brand__mark">Aura</span>
+        <span class="brand__text">Studio</span>
+      </a>
+      <div class="cta-group">
+        <a class="button button--ghost" href="/index.html">Back to home</a>
+      </div>
+    </header>
+
+    <main class="onboarding-layout">
+      <section class="onboarding-header">
+        <p class="eyebrow">Onboarding preview</p>
+        <h1>Shape your blueprint in four guided steps.</h1>
+        <p class="lead">Aura Studio analyses your story, clarifies your goals, and drafts a tailored site layout. Use the demo below to experience the conversational flow.</p>
+      </section>
+
+      <section class="panel-card">
+        <header class="stepper" aria-live="polite">
+          <span class="stepper__label" id="stepper-label">Step 1 of 4</span>
+          <div class="stepper__bar" role="presentation">
+            <div class="stepper__progress" id="stepper-progress" style="width: 25%"></div>
+          </div>
+        </header>
+
+        <form id="onboarding-form" class="panel-card--inline" novalidate>
+          <template id="step-1">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="cv-upload">Upload your CV (TXT, Markdown, or RTF)</label>
+                <input id="cv-upload" name="cvUpload" type="file" accept=".txt,.md,.markdown,.rtf,.json" />
+                <p class="muted" id="cv-upload-status">Drop a file to auto-populate the highlights or paste the contents below.</p>
+              </div>
+              <div class="form-field">
+                <label for="cv-text">Upload or paste your CV</label>
+                <textarea id="cv-text" name="cvText" placeholder="Paste your CV or summary..." required></textarea>
+              </div>
+              <div class="form-field">
+                <label for="focus-areas">What areas should we spotlight?</label>
+                <div class="chip-row" data-field="focusAreas">
+                  <button type="button" class="chip" data-value="Deep tech">Deep tech</button>
+                  <button type="button" class="chip" data-value="Product leadership">Product leadership</button>
+                  <button type="button" class="chip" data-value="Crypto ventures">Crypto ventures</button>
+                  <button type="button" class="chip" data-value="Research">Research</button>
+                  <button type="button" class="chip" data-value="Speaking">Speaking</button>
+                </div>
+              </div>
+            </div>
+          </template>
+
+          <template id="step-2">
+            <div class="form-grid">
+              <div class="form-field">
+                <label>What brings you here?</label>
+                <div class="chip-row" data-field="intent">
+                  <button type="button" class="chip" data-value="Exploring new roles">Exploring new roles</button>
+                  <button type="button" class="chip" data-value="Building presence">Building presence</button>
+                  <button type="button" class="chip" data-value="Publishing insights">Publishing insights</button>
+                  <button type="button" class="chip" data-value="Launching ventures">Launching ventures</button>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="headline">Preferred headline</label>
+                <input id="headline" name="headline" type="text" placeholder="e.g. Systems engineer &amp; explorer of emergent tech" required />
+              </div>
+            </div>
+          </template>
+
+          <template id="step-3">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="bio">Personal summary</label>
+                <textarea id="bio" name="bio" placeholder="Tell us about your curiosity, mission, and what excites you right now." required></textarea>
+              </div>
+              <div class="form-field">
+                <label for="links">Key links</label>
+                <input id="links" name="links" type="text" placeholder="Comma-separated URLs (LinkedIn, GitHub, Mirror, etc.)" />
+              </div>
+            </div>
+          </template>
+
+          <template id="step-4">
+            <div class="form-grid">
+              <div class="summary" id="summary"></div>
+            </div>
+          </template>
+
+          <div class="step-actions">
+            <div class="step-actions__group">
+              <button type="button" class="button button--ghost" id="back-button">Back</button>
+              <button type="button" class="button" id="next-button">Continue</button>
+            </div>
+            <p class="form-status" id="onboarding-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Aura Studio.</p>
+    </footer>
+  </div>
+</body>
+</html>
